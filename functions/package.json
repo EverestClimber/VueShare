@@ -1,0 +1,37 @@
+{
+	"name": "functions",
+	"description": "Cloud Functions for Firebase",
+	"scripts": {
+		"lint": "eslint .",
+		"serve": "firebase serve --only functions",
+		"shell": "firebase functions:shell",
+		"start": "npm run shell",
+		"deploy": "firebase deploy --only functions",
+		"logs": "firebase functions:log"
+	},
+	"dependencies": {
+		"@sendgrid/mail": "^6.3.1",
+		"axios": "^0.18.0",
+		"cookie-parser": "^1.4.3",
+		"express": "^4.16.4",
+		"firebase-admin": "~6.0.0",
+		"firebase-functions": "^2.1.0",
+		"slack": "^11.0.1",
+		"stripe": "^6.19.0"
+	},
+	"devDependencies": {
+		"babel-eslint": "^7.2.3",
+		"eslint": "^4.3.0",
+		"eslint-config-standard": "^10.2.1",
+		"eslint-loader": "^1.9.0",
+		"eslint-plugin-html": "^3.1.1",
+		"eslint-plugin-import": "^2.7.0",
+		"eslint-plugin-node": "^5.1.1",
+		"eslint-plugin-promise": "^3.5.0",
+		"eslint-plugin-standard": "^3.0.1"
+	},
+	"engines": {
+		"node": "8"
+	},
+	"private": true
+}
